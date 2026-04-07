@@ -1,6 +1,6 @@
 def jogar():
     print("*********************************")
-    print("***Bem vindo ao jogo da Forca!***")
+    print("***bem vindo ao jogo da forca!***")
     print("*********************************")
 
     palavra_secreta = "maça".upper()
@@ -14,7 +14,7 @@ def jogar():
 
     while(not enforcou and not acertou):
 
-        chute = input("Qual letra? ")
+        chute = input("qual letra? ")
         chute = chute.strip().upper()
 
         if(chute in palavra_secreta):
@@ -32,10 +32,10 @@ def jogar():
 
 
     if(acertou):
-        print("Você ganhou!!")
+        print("parabéns, você ganhou!!")
     else:
-        print("Você perdeu!!")
-    print("Fim do jogo")
+        print("você perdeu :(")
+    print("fim do jogo")
 
 if(__name__ == "__main__"):
     jogar()
